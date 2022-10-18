@@ -11,4 +11,12 @@ def main(a):
     Returns:
         string: the message to print
     """
-    return
+    if (a%10)/a+(a%100//a)/a+a//100/a and a//100==0 and a%2==1:
+        return "two-digit odd number"
+    if (a%10)/a+(a%100//a)/a+a//100/a and a//100==0 and a%2==0:
+        return "two-digit even number"
+    if (a%10)/a+(a//100)/a+(a%100//10)/a and a%2==1:
+        return "three-digit odd number"   
+    if (a%10)/a+(a//100)/a+(a%100//10)/a and a%2==0:
+        return "three-digit even number"     
+print(main(28))
